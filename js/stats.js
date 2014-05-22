@@ -1,4 +1,4 @@
-var DATA_SIZE = 5;
+var DATA_SIZE = 8;
 
 var inputElements = [];
 var outputMean = null;
@@ -32,8 +32,13 @@ var calcMean = function(){
         if(!Number.isNaN(number)){
             sum = sum + number;
             n = n + 1;
+        }else{
+             alert("計算できません");
         }
         index = index + 1;
+    }
+    if(sum == 0){
+        alert("合計が0になっています。");
     }
 
     if(n > 0){
